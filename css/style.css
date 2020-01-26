@@ -11,7 +11,7 @@ header {
 header .logo h1 {
     text-transform: capitalize;
     font-family: open sans;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 800;
     color: #232d51;
 }
@@ -28,13 +28,14 @@ header nav ul {
 header nav ul li {
     list-style-type: none;
     float: left;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 header nav ul li a {
     display: block;
     font-family: mada;
     text-decoration: none;
+    text-transform: capitalize;
     font-size: 14px;
     font-weight: 500;
     color: #232d51;
@@ -106,7 +107,6 @@ section.section-b {
     background-color: #d8d8d8;
     position: relative;
     padding-bottom: 108px;
-    top: -33px;
 }
 
 section.section-b .bg-dark {
@@ -556,13 +556,22 @@ footer .contact .contact-details ul li {
 }
 
 footer .contact .contact-form form input,
-footer .contact .contact-form form input::placeholder,
 footer .contact .contact-form form textarea,
 footer .contact .contact-form form button {
     box-sizing: border-box;
     padding: 10px;
     background-color: #0000;
     border: 1px solid #ebebed;
+    color: #ebebed;
+    font-size: 14px;
+    font-family: open sans;
+}
+
+
+footer .contact .contact-form form input::placeholder {
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #0000;
     color: #ebebed;
     font-size: 14px;
     font-family: open sans;
@@ -600,4 +609,82 @@ footer .contact .contact-form form button:hover {
 
 footer .contact .contact-form form button i {
     padding-right: 10px;
+}
+
+
+
+
+@media (max-width: 1450px) {
+
+    .section-b .g-content {
+        float: right;
+    }
+
+    .section-b .social-icons {
+        right: 20px;
+    }
+
+
+    .section-b .gallery-story .header {
+        margin-top: 50px;
+    }
+
+    .section-a .theme a {
+        font-size: .8em;
+        padding: 10px 40px;
+    }
+
+}
+
+
+@media (max-width: 1030px) {
+
+    header {
+        margin: 0px 30px;
+    }
+
+    /* section a fix */
+    section.section-a {
+        height: 500px;
+    }
+    
+    .section-a .theme {
+        top: 50px;
+        margin: 0px 30px;
+    }
+    
+    .section-a .theme-img {
+        opacity: 0;
+    }
+    
+    .section-a .theme h1 {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    
+    }
+    
+    .section-a .theme a {
+        font-size: .8em;
+        padding: 10px 30px;
+        border-radius: 2px;
+    }
+
+    /* section b fix */
+
+    .section-b .g-content {
+        top: -50px;
+    }
+
+    .section-b .social-icons {
+        left: 0;
+        width: 33%;
+    }
+
+    .section-b .text-boxx {
+        width: 25%;
+        float: right;
+    }
+    
 }
